@@ -145,6 +145,12 @@ curl http://localhost:11434/v1/responses -H "" -d '{...}'
 curl http://localhost:11434/v1/messages -H "" -d '{...}'
 ```
 
+## Resolve CORS
+
+- add Environment in `ollama.service` file
+  - `OLLAMA_HOST=0.0.0.0:11434`
+  - `OLLAMA_ORIGINS=*`
+
 ## Create a customized model
 
 ```bash
